@@ -7,6 +7,7 @@ pipeline {
     }
 
     environment {
+        GITHUB_REPO = 'https://github.com/gobinda1990/public-repo.git'
         PROJECT_NAME = 'GST_API_R9C'
         ARTIFACT_NAME = 'GST_API_R9C.jar'
         DEPLOY_DIR = "F:\\GST_JAR\\GST_API_R9C"  // Change to your desired Windows deployment path
@@ -16,7 +17,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/gobinda1990/public-repo.git'
+               // git branch: 'main', url: 'https://github.com/gobinda1990/public-repo.git'
+                 git credentialsId: 'a90189e7-266a-4547-81da-5f01576b55c3', url: "${env.GITHUB_REPO}", branch: 'main'
             }
         }
 
