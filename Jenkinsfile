@@ -45,9 +45,9 @@ pipeline {
         }
 
         stage('Deploy') {
-            when {
-                branch 'main'
-            }
+           // when {
+          //      branch 'main'
+         //   }
             steps {
                 bat """
                 if not exist "${DEPLOY_DIR}" mkdir "${DEPLOY_DIR}"
