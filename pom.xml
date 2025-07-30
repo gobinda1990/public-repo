@@ -115,6 +115,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>GST_API_R9C</finalName>
+		
 	</build>
 
 </project>
