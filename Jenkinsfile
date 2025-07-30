@@ -17,8 +17,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-               // git branch: 'main', url: 'https://github.com/gobinda1990/public-repo.git'
-                 git credentialsId: 'a90189e7-266a-4547-81da-5f01576b55c3', url: "${env.GITHUB_REPO}", branch: 'main'
+               git branch: 'main', url: "${env.GITHUB_REPO}"
+                // git credentialsId: 'a90189e7-266a-4547-81da-5f01576b55c3', url: "${env.GITHUB_REPO}", branch: 'main'
             }
         }
 
