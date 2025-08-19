@@ -5,7 +5,7 @@ pipeline {
         GITHUB_REPO = 'https://github.com/gobinda1990/public-repo.git'
         PROJECT_NAME = 'GST_API_R9C'
         ARTIFACT_NAME = 'GST_API_R9C.jar'
-        SCANNER_HOME = tool 'sonar-scanner'
+        SCANNER_HOME = tool 'sonar'
     }
 
     stages {
