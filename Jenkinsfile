@@ -17,6 +17,11 @@ pipeline {
                git branch: 'main', url: "${env.GITHUB_REPO}"                
             }
         }
+        stage('Build') {
+      steps {
+        sh 'mvn clean install -U'
+      }
+    }
         stage('Compile') {
             steps {
                 sh "mvn compile"
