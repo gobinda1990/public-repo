@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'java17'           // Set up in Jenkins > Global Tool Configuration
-        maven 'maven3.9.9'     // Set up Maven similarly
-    }
+  //  tools {
+  //      jdk 'java17'           // Set up in Jenkins > Global Tool Configuration
+  //      maven 'maven3.9.9'     // Set up Maven similarly
+ //   }
 
     environment {
         GITHUB_REPO = 'https://github.com/gobinda1990/public-repo.git'
