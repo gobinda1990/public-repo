@@ -1,6 +1,8 @@
 pipeline {
     agent any 
-
+  tools {
+    maven 'M3'  // Use the name you gave in Global Tool Config
+  }
     environment {
         GITHUB_REPO = 'https://github.com/gobinda1990/public-repo.git'
         PROJECT_NAME = 'GST_API_R9C'
